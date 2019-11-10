@@ -1,0 +1,744 @@
+@media only screen and (max-width: 75.43em) and (min-width: 49.40em)  {
+
+*{
+    margin:0;
+    font-family: 'DIN'
+}
+@font-face {
+    font-family: 'DIN';
+    src: url('DIN\ Alternate\ Bold.ttf'); 
+}
+
+html{
+    box-sizing:border-box;
+}
+
+body{
+    background:#F8F8F8;
+}
+
+.wrapper{
+    margin: 0 5rem 0 5rem;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    background: #F8F8F8;
+
+}
+
+
+.titles{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titles .rubrik{
+    margin:0 0 1rem 0;
+    margin-left: 0.5rem;
+}
+
+.titles h1{
+    text-transform: uppercase;
+    align-self: stretch;
+}
+
+.titles span{
+    color:#39B54A;
+}
+
+.titles h6{
+    font-weight: 300;
+}
+
+.burgermenu label{
+    display:block;
+    cursor: pointer;
+    font-size:30px;
+    float:right;
+    margin:0;
+}
+.menu{
+    display:none;
+    align-items: flex-end;
+    list-style: none;
+    margin:0 0 1rem 0;
+    padding:0;
+}
+
+.menu a{
+    text-decoration: none;
+    color:grey;
+    font-size: 0.9rem;
+    padding:0.3rem 1rem;
+    text-transform: uppercase;
+
+}
+
+.menu a:hover{
+    background:#39B54A;
+    color:white;
+}
+
+#toggle:checked + .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#toggle{
+    display:none;
+}
+
+}
+
+/* ------------------------------------- Imagebox and newsletter -------------------------------------- */
+
+.imgbox{
+    display:grid;
+    min-height: 20rem;
+    grid-template-columns: 3fr 1fr;
+}
+
+.box-a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    background-image: url("../images/header.jpg");
+    background-position: center;
+}
+
+.box-a .educationbox{
+    background:white;
+    opacity: 0.8;
+    width: 30%;
+    min-width: 10rem;
+    padding: 1.5rem 1rem;
+    margin: 0 5% 5% 0;
+}
+
+.educationbox:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.educationbox a  {
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+}
+
+
+.box-b{
+    background:#E6E6E6;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    
+}
+.box-b-hidden{
+    background:#E6E6E6;
+    display: none;;
+    flex-direction: column; 
+    justify-content: space-between;
+    
+}
+
+.paperplane{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff4dac;
+}
+
+.paperplane h1{
+    color:white;
+    text-transform: uppercase;
+    padding: 0.7rem 0 0.7rem 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    
+}
+
+
+.paperplane i {
+    color:white;
+    padding-right: 1.5rem;
+}
+
+
+#name {
+    width: 90%;
+    align-self: center;
+    padding: 0.5rem 0;
+    border:0;
+    
+}
+
+#mail {
+    width: 90%;
+    align-self: center;
+    padding: 0.5rem 0;
+    border:0;  
+}
+
+#name::placeholder{
+    padding-left: 3%;
+}
+
+#mail::placeholder{
+    padding-left: 3%;
+}
+
+.btn1{
+    background:#114D90;
+    color:white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    align-self: flex-end;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+/* ----------------------------------- Cities & Programs & Ansökan-button ---------------------------------- */
+
+.cities{
+    display:grid;
+    min-height: 10rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    'stockholm gothenburg malmo'
+    '. btnbox .'
+}
+
+
+.stockholm{
+    margin-top:30px;
+    grid-area: stockholm;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.gothenburg{
+    margin-top:30px;
+    grid-area: gothenburg;
+    display:flex;
+    flex-direction: column;
+}
+
+.malmo{
+    margin-top:30px;
+    grid-area: malmo;
+    display:flex;
+    flex-direction: column;
+}
+
+.stockholm h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    color: #39B54A;
+    font-weight: 500;
+    align-self: center;
+}
+
+.stockholm ol{
+        /* columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;  */
+        
+        padding: 0;
+        list-style: none;
+        font-size: 0.7rem;
+        line-height: 1.3em;
+        
+        
+}
+
+.stockholm a {
+    text-decoration: none;
+    color:grey;
+ 
+}
+.stockholm li {
+    text-align: center;
+    
+}
+
+.gothenburg li {
+    text-align: center;
+    
+}
+
+.malmo li {
+    text-align: center;
+    
+}
+
+.gothenburg h1{
+    font-size: 1.5rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    color: #39B54A;
+    font-weight: 500;
+    align-self: center;
+}
+.gothenburg ol{
+        padding:0;
+        list-style: none;
+        font-size: 0.7rem;
+        line-height: 1.3em;
+
+
+}
+
+.gothenburg a {
+    text-decoration: none;
+    color:grey;;
+}
+
+.malmo h1{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    color: #39B54A;
+    font-weight: 500;
+    align-self: center;
+}
+
+.malmo ol{
+        padding: 0;
+        list-style: none;
+        font-size: 0.7rem;
+        line-height: 1.3em;
+        
+}
+
+.malmo a {
+    text-decoration: none;
+    color:grey;;
+}
+.btnbox{
+    margin: 15% 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: btnbox;
+}
+.btn2 {
+    text-decoration: none;
+    background:#114D90;
+    color:white;
+    padding:0.8rem 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border:0;
+    transition: all 1s;
+
+}
+
+.btn2:hover{
+    background:#39B54A;
+    transform: rotate(360deg);  
+    font-size:1.5rem;
+    
+}
+
+.btn1:hover{
+    background:#39B54A;
+}
+
+
+/* --------------------------------------------------image boxes------------------------------------------ */
+
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1rem;
+    margin-top: 4%;
+}
+.box1{
+    display: flex;
+    height: auto;
+    background: white;
+}
+
+.img1{
+    width: 50%;
+    height: auto;
+}
+
+.text1{
+    width: 50%;
+    height: auto;
+    background: white;
+    font-size: 0.8rem;
+}
+
+.bild1{
+    width: 100%;
+    height:100%;
+}
+
+.text1 h1{
+    background: #ff4dac;
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    color: white;
+}
+
+.text1 p{
+    background: white;
+    color:grey;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    font-size:0.8rem;
+}
+
+/* ------------------------------------------ image nr 2 --------------------------------------- */
+
+.box2{
+    display: flex;
+    width: 25%;
+}
+
+.img2{
+    width: 50%;
+    height: auto;
+}
+
+.text2{
+    width: 50%;
+    height: auto;
+    background: white;
+    font-size: 0.8rem;
+}
+
+.bild2{
+    width: 100%;
+    height: 100%;
+}
+
+.text2 h1{
+    background: #ff4dac;
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    color: white;
+}
+
+.text2 p{
+    background: white;
+    color:grey;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size:0.8rem;
+}
+
+/* --------------------------------------- image nr 3 ------------------------------------ */
+
+.box3{
+    display: flex;
+    width: 25%;
+}
+
+.img3{
+    width: 50%;
+    height: auto;
+}
+
+.text3{
+    width: 50%;
+    height: auto;
+    background: white;
+    font-size: 0.8rem;
+}
+
+.bild3{
+    width: 100%;
+    height: 100%;
+}
+
+.text3 h1{
+    background: #ff4dac;
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    color: white;
+}
+
+.text3 p{
+    background: white;
+    color:grey;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    font-size:0.8rem;
+}
+
+/* -------------------------------------------------- image nr 4 --------------------------------------- */
+
+.box4{
+    display: flex;
+    width: 25%;
+}
+
+.img4{
+    width: 50%;
+    height: auto;
+}
+
+.text4{
+    width: 50%;
+    height: auto;
+    background: white;
+    font-size: 0.8rem;
+}
+
+.bild4{
+    width: 100%;
+    height: 100%;
+}
+
+.text4 h1{
+    background: #ff4dac;
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    color: white;
+}
+
+.text4 p{
+    background: white;
+    color:grey;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    font-size:0.8rem;
+}
+/* -------------------------------------------------- footer --------------------------------------- */
+
+.footerbox {
+    position: static;
+    height: 7rem;
+    width: 100%vh;
+    background-color:#39B54A;
+    color: #ffffff;
+    margin: 6% 0 0 0;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 5rem;
+}
+
+.socialmedia i{
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact h6{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.2px;
+    padding-bottom: 0.1rem;
+}
+
+.mail{
+    text-decoration: none;
+    color:white;
+    font-size: 0.9rem;
+}
+/* -------------------------------------------------- form --------------------------------------- */
+
+* {box-sizing: border-box}
+.formbox {
+    padding-top: 2em;
+}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: #D0C3C5;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=personummer] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=personummer]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #ff4dac;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+
+.registerbtn:hover {
+  opacity:0.9;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.ansok {
+    background-color: #114D90;
+    color: white;
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    width: fit-content;
+}
+/* -------------------------------------------------- form --------------------------------------- */
+.wraper {
+    margin-top: 2em;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
+    grid-gap:1rem;
+
+}
+
+form {
+  padding: 16px;
+  background-color: #d0c4c5;
+}
+
+
+input[type=text], input[type=personummer], input[type=password] {
+
+  width: 100%;
+  padding: 15px 0;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background:  white;
+}
+
+#email::placeholder{
+    padding-left: 10px;
+}
+#password::placeholder{
+    padding-left: 10px;
+}
+
+#personnummer::placeholder{
+    padding-left: 10px;
+}
+input[type=text]:focus, input[type=personummer]:focus {
+  background-color: #ddd;
+  outline: none;
+  padding-left:10px;
+}
+
+.registerbtn {
+  background-color: #ff4dac;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: registerbtn 1s;
+}
+
+.registerbtn:hover{
+    font-size:1em;
+    transform: rotate(180deg);
+    background: #39B54A;
+    
+
+}
+.loginbtn{
+    background-color: #39B54A;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: loginbtn 1s;
+}
+
+.loginbtn:hover{
+    font-size:1em;
+    transform: rotate(180deg);
+    background: #ff4dac;
+    
+
+}
+
+
+a {
+  color: #114D90;
+  text-decoration: none;
+}
+
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.ansok {
+    background-color: #114D90;
+    color: white;
+    padding: 0.3em 1em 0.3em 1em;
+    width: fit-content;
+    margin-bottom: 1em;
+}
+.gdpr{
+      font-size: 0.6em;
+      text-align: left;
+      padding-bottom: 10px;
+  }
+input[type=checkbox]{
+    vertical-align: -2.5px;
+    width: 15px;
+    height: 15px;
+}
+
+.forgottenpassword {
+    text-decoration: none;
+    color:black;
+    font-size:0.6em;
+}
+.forgottenpassword:hover{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
